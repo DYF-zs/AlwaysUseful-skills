@@ -29,55 +29,6 @@ AlwaysUseful-skills/
 
 > When adding new skills, update this table with the corresponding name, description, and path.
 
-## Recommended Skill Structure
-
-```text
-skill-name/
-├── SKILL.md
-├── README.md
-├── examples/
-├── assets/
-└── scripts/
-```
-
-Where:
-
-* `SKILL.md`: The main instruction file for the skill.
-* `README.md`: Optional documentation for the specific skill.
-* `examples/`: Optional examples of inputs, outputs, or use cases.
-* `assets/`: Optional images, templates, references, or supporting materials.
-* `scripts/`: Optional helper scripts.
-
-## How to Add a New Skill
-
-Create a new skill folder under the `skills/` directory:
-
-```bash
-mkdir skills/new-skill-name
-touch skills/new-skill-name/SKILL.md
-```
-
-Then edit `SKILL.md` and describe the purpose, usage, input/output requirements, and important notes for the skill.
-
-After adding the new skill, update the Skills table in this README and push the changes to GitHub:
-
-```bash
-git add .
-git commit -m "Add new skill"
-git push
-```
-
-## Maintenance Guidelines
-
-To keep this repository easy to maintain, please follow these guidelines:
-
-1. Each skill should have its own independent folder.
-2. Each skill should include at least one `SKILL.md` file.
-3. Folder names should use lowercase English words with hyphens, such as `document-analysis`.
-4. Skills should remain as independent as possible.
-5. Examples, assets, scripts, and supporting files should stay inside the corresponding skill folder.
-6. Update the Skills table whenever a skill is added or modified.
-
 ## Security Notes
 
 Do not commit the following content:
