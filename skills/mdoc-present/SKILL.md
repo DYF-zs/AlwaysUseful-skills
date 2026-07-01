@@ -1,34 +1,32 @@
 ---
 name: mdoc-present
-description: "Convert any Markdown document into a self-contained HTML presentation page that reuses the visual system of `分析产出/全域通讯Demo功能需求.html`: warm paper background, glass sections, editorial hero, numbered sections, responsive tables, badges, and optional Mermaid diagrams."
+description: "Convert any Markdown document into a self-contained HTML presentation page that reuses the built-in canonical visual system: warm paper background, glass sections, editorial hero, numbered sections, responsive tables, badges, and optional Mermaid diagrams."
 ---
 
 # Markdown to Canonical HTML Presentation
 
-Convert arbitrary Markdown into a polished, self-contained HTML document that uses the same style language as `分析产出/全域通讯Demo功能需求.html`. Treat that HTML file as the canonical template: the generated page should feel like another document from the same design system, not a new visual direction.
+Convert arbitrary Markdown into a polished, self-contained HTML document that uses the built-in canonical style language. Generated pages should feel like documents from the same design system, not a new visual direction.
 
 ## Canonical Reference
 
-- Canonical template: `分析产出/全域通讯Demo功能需求.html`
 - Style reference: `references/design-tokens.md`
 - Mermaid reference: `references/mermaid-setup.md`
 
-When the local canonical template exists, inspect it before generating or updating output. Preserve its visual decisions: colors, typography, page width, glass cards, section numbering, table density, badges, motion, and mobile behavior.
+Use the style reference as the canonical source for visual decisions: colors, typography, page width, glass cards, section numbering, table density, badges, motion, and mobile behavior.
 
 ## Workflow
 
 1. Read the source Markdown completely.
-2. If the canonical template file exists locally, read it to calibrate visual decisions against the real reference.
-3. Read `references/design-tokens.md` completely.
-4. If the Markdown contains a Mermaid code fence, read `references/mermaid-setup.md` completely.
-5. Derive the document title from the first `#` heading. If no `#` exists, use the file name.
-6. Generate one self-contained `.html` file:
+2. Read `references/design-tokens.md` completely.
+3. If the Markdown contains a Mermaid code fence, read `references/mermaid-setup.md` completely.
+4. Derive the document title from the first `#` heading. If no `#` exists, use the file name.
+5. Generate one self-contained `.html` file:
    - Inline all CSS in `<style>`.
    - Set `<html lang>` from the source language when obvious; default to `zh-CN` for Chinese or mixed Chinese/English documents.
    - Use Google Fonts links exactly as specified in the style reference.
    - Use Mermaid CDN only when Mermaid diagrams are present.
    - Do not require external CSS or local assets.
-7. Preview or validate the output when the environment allows it. At minimum, inspect the generated HTML for broken tags, missing style blocks, and unescaped Markdown content.
+6. Preview or validate the output when the environment allows it. At minimum, inspect the generated HTML for broken tags, missing style blocks, and unescaped Markdown content.
 
 ## Non-Negotiable Style Rules
 

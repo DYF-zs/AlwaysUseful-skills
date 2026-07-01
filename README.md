@@ -38,6 +38,12 @@ AlwaysUseful-skills/
 
 > 后续新增 skill 后，可以在这里继续补充对应名称、用途和路径。
 
+### 示例
+
+`mdoc-present` 生成的 HTML 演示页效果：
+
+![mdoc-present 示例](assets/demo-mdoc-present-full.png)
+
 ## 安全提醒
 
 请不要提交以下内容：
