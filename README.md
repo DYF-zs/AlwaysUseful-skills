@@ -14,6 +14,14 @@ AlwaysUseful-skills/
 ├── README_EN.md
 ├── .gitignore
 └── skills/
+    ├── analyze-product-mvp/
+    │   ├── SKILL.md
+    │   ├── agents/
+    │   │   └── openai.yaml
+    │   └── references/
+    │       ├── agent-omnichannel-example.md
+    │       ├── grading-models.md
+    │       └── output-template.md
     └── mdoc-present/
         ├── SKILL.md
         └── references/
@@ -23,9 +31,10 @@ AlwaysUseful-skills/
 
 ## Skills 列表
 
-| Skill 名称      | 简介                                                       | 路径                    |
-| --------------- | ---------------------------------------------------------- | ----------------------- |
-| `mdoc-present`  | 将任意 Markdown 转换为自包含的规范化 HTML 演示页。         | `skills/mdoc-present/`  |
+| Skill 名称           | 简介                                                       | 路径                           |
+| -------------------- | ---------------------------------------------------------- | ------------------------------ |
+| `analyze-product-mvp`| 将产品目标或场景转化为 Markdown MVP 分析文档。             | `skills/analyze-product-mvp/`  |
+| `mdoc-present`       | 将任意 Markdown 转换为自包含的规范化 HTML 演示页。         | `skills/mdoc-present/`         |
 
 > 后续新增 skill 后，可以在这里继续补充对应名称、用途和路径。
 

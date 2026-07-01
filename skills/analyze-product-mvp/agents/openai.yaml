@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Product MVP"
+  short_description: "Turn product goals into MVP capability docs"
+  default_prompt: "Use $analyze-product-mvp to analyze an AI knowledge base assistant MVP."

@@ -14,6 +14,14 @@ AlwaysUseful-skills/
 ├── README_EN.md
 ├── .gitignore
 └── skills/
+    ├── analyze-product-mvp/
+    │   ├── SKILL.md
+    │   ├── agents/
+    │   │   └── openai.yaml
+    │   └── references/
+    │       ├── agent-omnichannel-example.md
+    │       ├── grading-models.md
+    │       └── output-template.md
     └── mdoc-present/
         ├── SKILL.md
         └── references/
@@ -23,9 +31,10 @@ AlwaysUseful-skills/
 
 ## Skills
 
-| Skill Name     | Description                                                                       | Path                   |
-| -------------- | --------------------------------------------------------------------------------- | ---------------------- |
-| `mdoc-present` | Convert any Markdown document into a self-contained canonical HTML presentation.  | `skills/mdoc-present/` |
+| Skill Name            | Description                                                                       | Path                          |
+| --------------------- | --------------------------------------------------------------------------------- | ----------------------------- |
+| `analyze-product-mvp` | Turn a product goal or scenario into a Markdown MVP analysis document.            | `skills/analyze-product-mvp/` |
+| `mdoc-present`        | Convert any Markdown document into a self-contained canonical HTML presentation.  | `skills/mdoc-present/`        |
 
 > When adding new skills, update this table with the corresponding name, description, and path.
 
