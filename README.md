@@ -42,7 +42,7 @@ AlwaysUseful-skills/
 
 `mdoc-present` 生成的 HTML 演示页效果：
 
-![mdoc-present 示例](assets/demo-mdoc-present-full.png)
+![mdoc-present 示例](assets/mdoc-present-sample.png)
 
 ## 安全提醒
 
